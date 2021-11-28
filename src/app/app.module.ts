@@ -6,6 +6,9 @@ import { HeaderComponent } from './header/header.component';
 import { HomeFileComponent } from './home-file/home-file.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { OutPutTextComponent } from './out-put-text/out-put-text.component';
+import { UploadPageComponent } from './upload-page/upload-page.component';
+import { SubirArchivoComponent } from './subir-archivo/subir-archivo.component';
+import { CabeceraComponent } from './cabecera/cabecera.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { OutPutTextComponent } from './out-put-text/out-put-text.component';
     HeaderComponent,
     HomeFileComponent,
     SideBarComponent,
-    OutPutTextComponent
+    OutPutTextComponent,
+    UploadPageComponent,
+    SubirArchivoComponent,
+    CabeceraComponent
   ],
   imports: [
     BrowserModule

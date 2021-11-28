@@ -6,7 +6,8 @@ import {EventEmitter, Injectable} from '@angular/core';
 export class OcrService {
   cbImage: EventEmitter<any> = new EventEmitter<any>();
   cbText: EventEmitter<any> = new EventEmitter<any>();
+  cbButton: EventEmitter<any> = new EventEmitter<any>();
 
-  constructor() {
+  constructor(/* private ocrService: OcrService */ ) {
   }
 }

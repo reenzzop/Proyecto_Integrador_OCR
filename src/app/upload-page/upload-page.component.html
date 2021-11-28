@@ -1,0 +1,15 @@
+
+<div class="wrapper">
+    <div class="position-relative">
+        <h3>Subir imagen</h3>
+        <input class="input-file" (change)="capturarFile($event)" type="file">
+        <div class="preview-img" *ngIf="previsualizacion">
+            <button class="clear-image" type="button" (click)="clearImage()">Clear</button>
+           <!--  <button class="input-image" type="button" (click)="clickButton()">Escanear</button> -->
+            <img  [src]="previsualizacion" alt="">
+        </div>
+        
+  
+    </div>
+   
+</div>

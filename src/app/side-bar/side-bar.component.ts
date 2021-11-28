@@ -44,10 +44,6 @@ export class SideBarComponent implements OnInit, OnDestroy {
     this.listSubscribers = [observer1$];
   };
 
-  /**
-   * AQUI EMPIEZA LO BUENO !!
-   */
-
   loadingProgress = (logger) => {
     console.log(logger);
     this.loadingPercentage = logger.progress
@@ -74,8 +70,6 @@ export class SideBarComponent implements OnInit, OnDestroy {
       this.cx.strokeStyle = 'red';
       this.cx.strokeRect(bounding.x0, bounding.y0, bounding.x1 - bounding.x0, bounding.y1 - bounding.y0);
       this.cx.beginPath();
-      // this.cx.moveTo(w.baseline.x0, w.baseline.y0);
-      // this.cx.lineTo(w.baseline.x1, w.baseline.y1);
       this.cx.stroke();
 
     });
@@ -91,12 +85,10 @@ export class SideBarComponent implements OnInit, OnDestroy {
     console.log('FINALIZO ----------------->', data);
     this.ocrService.cbText.emit(data)
     this.loadingPercentage = 0
-    // const
   };
 
   loadedImage = () => {
     this.initSetup();
-    // this.initialization();
     console.log('IMAGEN LISTA');
   };
 
