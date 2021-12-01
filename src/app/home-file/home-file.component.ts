@@ -31,4 +31,8 @@ export class HomeFileComponent implements OnInit {
   clickImage = (image) => {
     this.ocrService.cbImage.emit(image);
   };
+
+  /* clickButton = (sanitizer) => {
+    this.ocrService.cbButton.emit(sanitizer);
+  } */
 }

@@ -12,7 +12,7 @@ export class UploadPageComponent implements OnInit {
   public archivos: any = []
   public loading: boolean
 
-  constructor(private sanitizer: DomSanitizer /* private ocrService: OcrService */) { }
+  constructor(private sanitizer: DomSanitizer, private ocrService: OcrService) { }
 
   ngOnInit(): void {
   }
@@ -63,8 +63,14 @@ export class UploadPageComponent implements OnInit {
     this.archivos = [];
   }
 
-/*   clickButton = (image) => {
+  clickButton = (image) => {
     this.ocrService.cbButton.emit(image);
   };
- */
+
+  /* clickImage = (image) => {
+    this.ocrService.cbImage.emit(image);
+  }; */
+
+  
+
 }
